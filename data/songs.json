@@ -1,0 +1,82 @@
+[
+    {
+        "fileNum":  0,
+        "src":      1,
+        "title":    "No Sandman, No Santa",
+        "artist":   "Brian Dunning",
+        "album":    "A Celtic Heartbeat Christmas",
+        "videoId":  "ClqbFcvW3cg"
+    },
+    {
+        "fileNum":  1,
+        "src":      1,
+        "title":    "Estampie: Souvent Sospire",
+        "artist":   "The Christmas Revels",
+        "album":    "Christmas Day In The Morning: A Revels Celebration of the Winter Solstice",
+        "videoId":  "j9jwHZmxL-w"
+    },
+    {
+        "fileNum":  2,
+        "src":      1,
+        "title":    "Fum, Fum, Fum",
+        "artist":   "Mannheim Steamroller",
+        "album":    "Christmas Extraordinaire",
+        "videoId":  "b5Gj7hUWO6E"
+    },
+    {
+        "fileNum":  3,
+        "src":      1,
+        "title":    "Gaudete",
+        "artist":   "St. Paul The Apostle Music Ministry",
+        "album":    "Welcome The Holy Child",
+        "videoId":  ""
+    },
+    {
+        "fileNum":  4,
+        "src":      1,
+        "title":    "Drive the Cold Winter Away",
+        "artist":   "Lars Johannesson, Neal Hellman, Deby Benton Grosjean, Jesse Autumn, Barry Phillips",
+        "album":    "Colonial Christmas",
+        "videoId":  "fNQuGg2jA"
+    },
+    {
+        "fileNum":  5,
+        "src":      0,
+        "title":    "Goblin's Lair",
+        "artist":   "Kumi Tanioka",
+        "album":    "Final Fantasy Crystal Chronicles Original Soundtrack",
+        "videoId":  "6lNPKTx_Ii0"
+    },
+    {
+        "fileNum":  6,
+        "src":      0,
+        "title":    "Eternal Oath",
+        "artist":   "Kumi Tanioka",
+        "album":    "Final Fantasy Crystal Chronicles Original Soundtrack",
+        "videoId":  "oJgj9Q6Hw6g"
+    },
+    {
+        "fileNum":  7,
+        "src":      0,
+        "title":    "Moving Clouds on the River's Surface",
+        "artist":   "Kumi Tanioka",
+        "album":    "Final Fantasy Crystal Chronicles Original Soundtrack",
+        "videoId":  "GwY0geNQoGE"
+    },
+    {
+        "fileNum":  8,
+        "src":      0,
+        "title":    "Maggie is Everything",
+        "artist":   "Kumi Tanioka",
+        "album":    "Final Fantasy Crystal Chronicles Original Soundtrack",
+        "videoId":  "_Fn1Pw-LxU8"
+    },
+    {
+        "fileNum":  9,
+        "src":      0,
+        "title":    "Amidatty and Eleanor, too",
+        "artist":   "Kumi Tanioka",
+        "album":    "Final Fantasy Crystal Chronicles Original Soundtrack",
+        "videoId":  "wv0_KT_Icsc"
+    }
+]

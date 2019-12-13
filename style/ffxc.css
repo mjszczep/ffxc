@@ -1,0 +1,87 @@
+﻿body {
+    background-color: #e0efee;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+}
+
+button {
+    padding: 1em 4em;
+    border: 2px solid #111;
+    border-radius: 4px;
+    background-color: #fcfefe;
+    font-weight: bold;
+}
+
+    button:hover {
+        cursor: pointer;
+        border-color: #78bab5;
+        color: #78bab5;
+    }
+
+#content {
+    background-color: #f8fcfc;
+    border: 1px solid #d0d0e0;
+    border-radius: 8px;
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+}
+
+#top > * {
+    max-width: 67%;
+    display: inline-block;
+}
+
+.entry {
+    background-color: #fcfefe;
+    border: 1px solid #d0d0e0;
+    border-radius: 4px;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.controls {
+    text-align: initial;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+    .controls ul {
+        margin: auto;
+        padding: initial;
+        list-style: none;
+    }
+
+.numHeader {
+    margin: 0 4px;
+    float: left;
+    text-align: left;
+}
+
+    .numHeader.correct {
+        color: #00a000;
+    }
+
+    .numHeader.incorrect {
+        color: #a00000;
+    }
+
+.songInfo {
+    margin: 1em 2em;
+    text-align: initial;
+}
+
+    .songInfo p {
+        margin: auto;
+    }
+
+.songVid {
+    margin-bottom: 1em;
+}
+
+.totalCorrect {
+    font-size: 2em;
+    font-weight: bold;
+}
