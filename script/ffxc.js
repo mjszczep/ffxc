@@ -12,8 +12,8 @@ class Song {
                 $(`<h2 class="numHeader">#${idx}</h2>`)
             );
 
-            let controls = $('<div class="controls"/>');
-            let audio = $('<audio controls/>').append(
+            const controls = $('<div class="controls"/>');
+            const audio = $('<audio controls/>').append(
                 $('<source src="sound/' + this.fileNum + '.mp3"' +
                     'type="audio/mp3" />')
             );
@@ -54,18 +54,21 @@ class Song {
     }
 
     checkGuess() {
-        let songInfo = this.entry.find('.songInfo');
+        const songInfo = this.entry.find('.songInfo');
         songInfo.append(
             $(`<p><strong>Title:</strong> ${this.title}</p>`),
             $(`<p><strong>Artist:</strong> ${this.artist}</p>`),
             $(`<p><strong>Album:</strong> ${this.album}</p>`)
         );
 
-        let songVid = songInfo.find('.songVid');
+        const songVid = songInfo.find('.songVid');
         if (this.videoId !== "") {
-            let player = new YT.Player(songVid[0], {
+            const player = new YT.Player(songVid[0], {
                 width: '100%',
                 videoId: this.videoId
+                /* TODO: it would be nice to implement the onStateChange event
+                   to pause all other currently playing videos, but let's not
+                   bother with that right now... */
             });
         }
         else {
@@ -75,17 +78,17 @@ class Song {
         }
 
         let isCorrect = false;
-        let header = this.entry.find('.numHeader');
+        const header = this.entry.find('.numHeader');
         header.css('float', 'initial');
 
         if (this.entry.find('input:checked').val() === this.src.toString()) {
             header.addClass('correct');
-            header.text(`${header.text()} - CORRECT!`);
+            header.text(`${header.text()} - Correct!`);
             isCorrect = true;
         }
         else {
             header.addClass('incorrect');
-            header.text(`${header.text()} - INCORRECT!`);
+            header.text(`${header.text()} - Incorrect!`);
         }
 
         return isCorrect;
@@ -94,8 +97,8 @@ class Song {
 
 function checkGuesses(songs) {
     let emptyGuess = null;
-    for (let song of songs) {
-        let entry = song.render();
+    for (const song of songs) {
+        const entry = song.render();
         if (entry.find('.controls input:checked').length === 0) {
             emptyGuess = entry;
             break;
@@ -112,10 +115,10 @@ function checkGuesses(songs) {
     let numCorrect = 0;
     songs.forEach(song => numCorrect += song.checkGuess() ? 1 : 0);
 
-    let bottom = $('#bottom');
+    const bottom = $('#bottom');
     bottom.empty();
     bottom.append(
-        $(`<div class="totalCorrect">TOTAL: ${numCorrect} / ${songs.length}</div>`)
+        $(`<div class="totalCorrect">Total: ${numCorrect} / ${songs.length}</div>`)
     );
 }
 

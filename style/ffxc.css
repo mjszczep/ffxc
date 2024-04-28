@@ -39,8 +39,10 @@ button {
     border: 1px solid #d0d0e0;
     border-radius: 4px;
     display: inline-block;
+    width: 640px;
     min-width: 50%;
-    margin: 1em;
+    max-width: 100%;
+    margin: 1em auto;
 }
 
 .controls {
@@ -56,9 +58,10 @@ button {
     }
 
 .numHeader {
-    margin: 0 4px;
+    margin: 0.5em 1em;
     float: left;
     text-align: left;
+    text-transform: uppercase;
 }
 
     .numHeader.correct {
@@ -85,4 +88,5 @@ button {
 .totalCorrect {
     font-size: 2em;
     font-weight: bold;
+    text-transform: uppercase;
 }
